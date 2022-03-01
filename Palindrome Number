@@ -1,0 +1,9 @@
+x = 1241
+print(str(x)[1])
+intString = str(x)
+for i in range(len(intString)):
+    if intString[i] == intString[len(intString) - (1 + i)]:
+        continue
+    else:
+        return False
+    return True
